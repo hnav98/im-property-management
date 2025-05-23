@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Im Property Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-700 to-yellow-400 text-white py-24 px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Im Property Management</h1>
+    <p class="text-lg md:text-xl mb-8">Luxury Rentals & Property Solutions</p>
+    <a href="#listings" class="bg-white text-green-700 px-6 py-3 font-semibold rounded-full shadow hover:scale-105 transition">View Listings</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4 text-center">About Us</h2>
+    <p class="text-lg text-center max-w-3xl mx-auto">We specialize in luxury property rentals and personalized property management services. Whether you're a homeowner or a tenant, our mission is to provide stress-free, high-quality service tailored to your needs.</p>
+  </section>
+
+  <!-- Listings Section -->
+  <section id="listings" class="bg-gray-100 py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Featured Listings</h2>
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Property Card -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <img src="assets/images/sample.jpg" class="w-full h-60 object-cover" alt="Property" />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Luxury Villa – Calgary</h3>
+          <p class="text-sm text-gray-600">3 Bed • 2.5 Bath • $4,500/mo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="grid gap-4">
+      <input type="text" name="name" placeholder="Your Name" required class="p-3 border rounded" />
+      <input type="email" name="email" placeholder="Your Email" required class="p-3 border rounded" />
+      <input type="text" name="phone" placeholder="Phone Number" class="p-3 border rounded" />
+      <textarea name="message" placeholder="Message" required class="p-3 border rounded" rows="5"></textarea>
+      <button type="submit" class="bg-green-700 text-white py-3 rounded-lg hover:bg-green-800">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Im Property Management | info@impropertymanagement.com</p>
+  </footer>
+</body>
+</html>
